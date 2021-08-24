@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #635854;
+    border-bottom:  4px solid #3596F5;
+}
+
+.navbar {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    
+}
+.navbar-item {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-contacts {
+    text-align: right;
+    color:#fff;
+}
+
+.navbar-text {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.navbar-phone {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+/*
+.main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.block {
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.change-floor {
+    margin-top: 74px;
+}
+.change-floor-text {
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+}
+.btn-up {
+    background-image: url(/images/up.svg);
+    background-position: center;
+    background-color: #fff;
+    border: none;
+    width: 32px;
+    height: 20px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.btn-down {
+    background-image: url(/images/up.svg);
+    background-position: center;
+    background-color: #fff;
+    border: none;
+    width: 32px;
+    height: 20px;
+    margin-top: 35px;
+    transform:rotate(180deg);
+    cursor: pointer;
+}
+
+.change-floor-numb {
+    width: 75px;
+    height: 75px;
+    color: #635854;
+    font-size: 60px;
+    border: none;
+
+}
+
+.change-floor-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 109px;
+}
+
+.look-all-flat {
+    text-decoration: none;
+    background-color: #3596F5;
+    padding: 16px 36px 16px 36px;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 115px;
+}
+
+.look-all-flat:focus {
+ border: none;
+}
+*/
+
+.main {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-image path{
+  opacity: 0;
+}
+
+.home-image path:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+path.current-floor {
+  opacity: 1; 
+}
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-btn {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+.counter-qown {
+  transform:rotate(180deg)
+}
+
+.main-title {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+
+.counter {
+  font-family: "Bebas Neue", sans-serif;
+  color: #635854;
+  font-size: 124px;
+  margin-top: 10px;
+}
+
+.btn-primery {
+  background: #3596F5;
+  border-radius: 6px;
+  padding: 16px 36px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #D7D7D7;
+  padding-top: 73px;
+  padding-bottom: 73px;
+  margin: auto;
+}
+
+.footer-contacts-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+  margin-right: 59px;
+}
+
+.footer-social-icon {
+  margin-right: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  
+}
+
+.footer-link a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+}
+
+hr {
+  border: 4px solid #3596F5;
+  margin-bottom: 13px;
+}
+
+.footer-phone {
+  font-size: 17px;
+line-height: 20px;
+/* identical to box height */
+text-decoration: none;
+font-weight: 600;
+color: #635854;
+}
+
+.footer-text {
+  font-size: 14px;
+line-height: 16px;
+
+color: #635854;
+}
+
+.modal {
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s;
+}
+
+.is-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 1000px;
+  min-height: 565px;
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: transform 0.2s, opacity 0.4s;
+  transition-delay: 0.2s;
+}
+.is-open >.modal-dialog {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.modal-img {
+  background: #EBEBEB;
+  width: 60%;
+  text-align: center;
+  padding: 50px;
+}
+
+.modal-title {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.modal-info {
+  width: 40%;
+  padding: 50px 46px;
+  
+}
+
+.flat-list {
+  margin-top: 55px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.flat-item {
+  margin-bottom: 10px;
+}
+.flat-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+  text-decoration: none;
+}
+
+.flat-link-js {
+  color: #3596F5;
+  text-decoration: underline;
+}
+
+.flat-link:hover {
+  color: #3596F5;
+  text-decoration: underline;
+}
+
+.modal-alert {
+  margin-top: 55px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+}
+
+.modal-close-btn {
+  position:absolute;
+  right: 27px;
+  top: 38px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+.flats path {
+  opacity: 0;
+}
+.flats path:hover {
+  opacity: 1;
+  cursor: pointer;
+}
